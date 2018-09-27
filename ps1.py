@@ -30,10 +30,39 @@ max2 = 0
 # find two largest
 
 if (len(maxlist) == 0):
-    print("0, 0")
+    print("0 0")
 else:
     for i in range(len(maxlist)):
         if maxlist[i] >= max1:
             max2 = max1
             max1 = maxlist[i]
     print (max1, max2)
+#
+#
+# zeros = []
+#
+# for i in range(int(row)):
+#     for j in range(int(col)):
+#         zeros = [0] * col
+#
+# limit = 0
+#
+# if (len(maxlist) == 0):
+#     print("0 0")
+# else:
+#     for i in range(len(maxlist)):
+#         if maxlist[i] > max1:
+#             max1 = maxlist[i]
+#     limit = range[i]
+#     x = index[i][0]
+#     y = index[i][1]
+#     zeros[x][y] = 1
+#     while limit > 0:
+#          zeros[x+limit][y] = 1
+#          zeros[x][y+limit] = 1
+#          zeros[x-limit][y] = 1
+#          zeros[x][y-limit] = 1
+#          limit -= 1
+#
+#
+# #print (index)
