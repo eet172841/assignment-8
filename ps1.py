@@ -28,9 +28,12 @@ for i in range(int(row)):
 max1 = 0
 max2 = 0
 # find two largest
-for i in range(len(maxlist)):
-    if maxlist[i] >= max1:
-        max2 = max1
-        max1 = maxlist[i]
 
-print (max1, max2)
+if (len(maxlist) == 0):
+    print("0, 0")
+else:
+    for i in range(len(maxlist)):
+        if maxlist[i] >= max1:
+            max2 = max1
+            max1 = maxlist[i]
+    print (max1, max2)
